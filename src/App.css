@@ -55,6 +55,6 @@ body {
 }
 
 .movie-card:hover .movie-card-image {
-  opacity: 0.8; /* Baja la opacidad al pasar el cursor */
+  opacity: 0.8; 
 }
 
