@@ -4,9 +4,17 @@ body {
   margin: 0; /* Para eliminar márgenes por defecto */
 }
 
+.App {
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column; 
+}
+
 .custom-footer {
-  background-color: #1C1C1C; /* Gris oscuro */
-  color: #FFFFFF; /* Texto blanco */
+  margin-top: auto;
+  background-color: #1C1C1C;
+  color: #FFFFFF;
+  padding: 20px 0;
 }
 
 .movie-carousel {
