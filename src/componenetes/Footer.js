@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container text-center text-md-start">
         <div class="row text center text-md-start">
           <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h5>Nosotros</h5>
+            <p>@ 2024 Parias. Todos los derechos reservados.</p>
           </div>      
          </div>
       </div>
