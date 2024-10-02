@@ -6,6 +6,7 @@ import Homepage from "./paginas/Homepage";
 import Cartelera from "./paginas/cartelera"
 import Cines from "./paginas/cines";
 import Confiteria from "./paginas/confiteria";
+import DetallesPelicula from "./paginas/DetallesPelicula 
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/Cartelera" element={<Cartelera />} />
           <Route path="/Cines" element={<Cines />} />
           <Route path="/Confiteria" element={<Confiteria />} />
+          <Route path="/DetallesPelicula/:id" element={<DetallesPelicula />} />
         </Routes>
         <Footer/>
       </div>
