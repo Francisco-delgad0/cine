@@ -55,6 +55,14 @@ body {
 }
 
 .movie-card:hover .movie-card-image {
-  opacity: 0.8; 
+  opacity: 0.6; 
+}
+
+.detalles h2{ 
+  color: #B22222;
+}
+
+.detalles h4{
+  color:#FFEB3B
 }
 
