@@ -19,6 +19,7 @@ const Cartelera = () => {
       const { data: { results } } = await axios.get(`${API_URL}/movie/now_playing`, {
         params: {
           api_key: API_KEY,
+          language: 'es'
         },
       });
 

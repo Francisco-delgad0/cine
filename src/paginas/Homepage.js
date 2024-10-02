@@ -21,6 +21,7 @@ const Homepage = () => {
       const { data: { results } } = await axios.get(`${API_URL}/discover/movie`, {
         params: {
           api_key: API_KEY,
+          language: 'es',
         },
       });
 
