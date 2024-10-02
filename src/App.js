@@ -6,7 +6,7 @@ import Homepage from "./paginas/Homepage";
 import Cartelera from "./paginas/cartelera"
 import Cines from "./paginas/cines";
 import Confiteria from "./paginas/confiteria";
-import DetallesPelicula from "./paginas/DetallesPelicula 
+import DetallesPelicula from "./paginas/DetallesPelicula"; 
 
 function App() {
   return (
