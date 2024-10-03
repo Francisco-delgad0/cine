@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
+import Cartas from '../componenetes/Cartas';
 
 const Cine = () => {
   const cines = [
@@ -46,16 +47,8 @@ const Cine = () => {
     <div className="container mb-2">
       <h1 className="text-white text-center mt-4 mb-3">Salas de Cine en Santiago</h1>
       <div className="row">
-        {cines.map((cine) => (
-          <div key={cine.id} className="col-md-4 mb-4">
-            <div className="card bg-dark text-white">
-              <img src={cine.imagen} className="card-img-top" alt={cine.nombre} />
-              <div className="card-body">
-                <h5 className="card-title">{cine.nombre}</h5>
-                <p className="card-text">{cine.direccion}</p>
-              </div>
-            </div>
-          </div>
+        {cines.map((item) => (
+          <Cartas item={item} />
         ))}
       </div>
     </div>

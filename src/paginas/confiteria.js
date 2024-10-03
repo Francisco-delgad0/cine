@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
+import Cartas from '../componenetes/Cartas';
 
 const Confiteria = () => {
   const menuItems = [
@@ -47,15 +48,7 @@ const Confiteria = () => {
       <h1 className="text-white text-center mt-4 mb-3">Menú de Confitería</h1>
       <div className="row">
         {menuItems.map((item) => (
-          <div key={item.id} className="col-md-4 mb-4">
-            <div className="card bg-dark text-white">
-              <img src={item.imagen} className="card-img-top" alt={item.nombre} />
-              <div className="card-body">
-                <h5 className="card-title">{item.nombre}</h5>
-                <p className="card-text">{item.precio}</p>
-              </div>
-            </div>
-          </div>
+          <Cartas item={item} />
         ))}
       </div>
     </div>
