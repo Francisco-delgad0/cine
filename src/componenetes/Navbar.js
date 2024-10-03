@@ -3,16 +3,40 @@ import { NavLink } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
 
-
-function Navbar(){
+function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-dark text-light">
-      <div class="container-fluid">        
-        <NavLink to="/Homepage" className="navbar-brand text-white" activeclassname="is-active" exact="true">CineApp</NavLink>
-        <NavLink to="/Cartelera" className="nav-link text-white" activeClassName="is-active">Cartelera</NavLink>
-        <NavLink to="/Cines" className="nav-link text-danger" activeClassName="isactive">Cines</NavLink>
-        <NavLink to="/Confiteria" className="nav-item" activeClassName="is-active">Confitería</NavLink>
-        <NavLink to="/Login" className="nav-button">Iniciar Sesión</NavLink>
+      <div className="container-fluid">
+        <NavLink 
+          to="/Homepage" 
+          className={({ isActive }) => `navbar-link text-white ${isActive ? 'active-link' : ''}`} 
+        >
+          CineApp
+        </NavLink>
+        <NavLink 
+          to="/Cartelera" 
+          className={({ isActive }) => `nav-link text-white ${isActive ? 'active-link' : ''}`} 
+        >
+          Cartelera
+        </NavLink>
+        <NavLink 
+          to="/Cines" 
+          className={({ isActive }) => `nav-link text-white ${isActive ? 'active-link' : ''}`} 
+        >
+          Cines
+        </NavLink>
+        <NavLink 
+          to="/Confiteria" 
+          className={({ isActive }) => `nav-link text-white ${isActive ? 'active-link' : ''}`} 
+        >
+          Confitería
+        </NavLink>
+        <NavLink 
+          to="/Login" 
+          className={({ isActive }) => `nav-link text-white ${isActive ? 'active-link' : ''}`} 
+        >
+          Iniciar Sesión
+        </NavLink>
         <span className="nav-indicador"></span>
       </div>
     </nav>
